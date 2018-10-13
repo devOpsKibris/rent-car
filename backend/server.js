@@ -12,15 +12,17 @@ app.use('/admin', admin);
 app.use('/webapp', webApp);
 
 app.get('/', function (req, res) {
-    res.send('Rental System Online')
+    res.send('Rental System Online');
 });
 
 admin.get('/', function (req, res) {
-    res.send('dashboard API Online')
+    res.send('dashboard API Online');
 });
 
 webApp.get('/', function (req, res) {
-    res.send('webApp API Online')
+    res.send('webApp API Online');
 });
 
-app.listen(PORT);
+app.listen(PORT, () => {
+    console.log(`server now running on: http://locahost:${PORT}`);
+});
