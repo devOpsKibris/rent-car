@@ -1,1 +1,19 @@
-node_modules/
+# dependencies
+node_modules
+
+# testing
+/dashboard/coverage
+
+# production
+/dashboard/build
+
+# misc
+/dashboard/.DS_Store
+/dashboard/.env.local
+/dashboard/.env.development.local
+/dashboard/.env.test.local
+/dashboard/.env.production.local
+
+/dashboard/npm-debug.log*
+/dashboard/yarn-debug.log*
+/dashboard/yarn-error.log*
